@@ -5,6 +5,19 @@ function breakStatement(num) {
   // la ejecución y retornar el string: "Se interrumpió la ejecución".
   // PISTA: Utiliza el statement 'break'.
   // Tu código:
-}
-
-module.exports = breakStatement;
+    const resultados = [];
+    let suma = num;
+  
+    for (let i = 0; i < 10; i++) {
+      suma += 2;
+      resultados.push(suma);
+  
+      if (suma === i) {
+        return "Se interrumpió la ejecución";
+      }
+    }
+  
+    return resultados;
+  }
+  
+  module.exports = breakStatement;  
