@@ -5,5 +5,4 @@ function actualizarValorPropiedad(objeto, propiedad, valor) {
    objeto[propiedad] = valor;
    return objeto;
 }
-
 module.exports = actualizarValorPropiedad;
